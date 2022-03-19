@@ -1,0 +1,308 @@
+@font-face {
+    font-family: Raleway;
+    src: url(raleway/Raleway-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    padding-right: 64px;
+}
+
+.menu-icon {
+    width: 64px;
+    height: 64px;
+    display: block;
+}
+
+.main-title {
+    font-size: 30px;
+    color: #4E586F;
+    text-align: center;
+    padding: 5rem;
+    font-weight: bold;
+}
+
+.container-index {
+    width: 95%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin: 2rem auto;
+}
+
+.index-card {
+    transition: .3s ease;
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 5px 20px #00000015;
+    border-radius: 4px;
+    border-top: 5px solid #4E586F;
+    cursor: pointer;
+}
+
+.index-card:hover {
+    transition: .3s ease-in;
+    transform: scale(1.01);
+    box-shadow: 0 5px 15px #00000020;
+    border-top: 5px solid #61a7f7;
+}
+
+.index-card:hover .index-card_title {
+    transition: .3s ease-in;
+    color: #61a7f7;
+}
+
+.index-card_svg {
+    width: 150px;
+    height: 150px;
+    margin: 1rem auto;
+    display: block;
+}
+
+.index-card_title {
+    transition: .3s ease;
+    font-size: 20px;
+    font-weight: bold;
+    color: #4E586F;
+    text-align: center;
+    line-height: 160%;
+}
+
+.container-car {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 4rem auto;
+}
+
+
+.car-card_icon {
+    width: 96px;
+    height: 96px;
+    display: block;
+    margin: 1.5rem auto;
+}
+
+.car-card_row {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4E586F;
+    padding: .7rem;
+    min-width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+.car-card_reservation, .car-card_kilometers {
+    padding: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background-color: #61a7f7;
+    display: block;
+    margin: 1rem auto;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.car-card_kilometers {
+    background-color: #ffffff00;
+    color: #61a7f7;
+}
+
+.car-card {
+    width: 25%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px #61a7f780;
+    border-radius: 5px;
+    height: auto;
+    padding: 1rem;
+}
+
+.car-container {
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    margin:2rem auto;
+}
+
+.car-table {
+    width: 70%;
+}
+
+.car-table_header {
+    padding: 12px;
+    font-weight: bold;
+    color: #fff;
+    background: #4E586F;
+    border-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.container-day {
+    border-radius: 5px;
+    border-top: none;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    vertical-align: baseline;
+}
+
+.day-reserved {
+    width: 90%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 10% 25px 10%;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #61a7f7;
+    margin: 10px auto;
+    border-radius: 2px;
+
+}
+
+.day-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+height: 24px;
+width: 24px;
+background-color: #4E586F;
+color: #fff;
+font-weight: bold;
+font-size: 14px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+
+/*MODAL RESERVATION*/
+
+#reservation-popup, #kilometers-popup, #cancelReservation-popup {
+    position: fixed;
+    top: 20vh;
+    left: 20vw;
+    width: 60vw;
+    height: fit-content;
+    background-color: #fff;
+    box-shadow: 0px 0px 200px #00000080;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+}
+
+.popup-header {
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    color: #fff;
+    background-color: #61a7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    border-bottom-right-radius: 50% 20%;
+    border-bottom-left-radius: 50% 20%;
+    font-size: 22px;
+}
+
+.form-group {
+    width: 40%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 1rem 5%;
+}
+
+.form-group_label {
+    color: #4E586F;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 1.5rem 0 .8rem 0;
+}
+
+.form-group_input, .form-group_select {
+    background-color: #61a7f720;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.popup-button {
+    padding: 16px;
+    color: #fff;
+    background-color: #61a7f7;
+    border-radius: 5px;
+    border: 2px solid #61a7f7;
+    display: block;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.popup-button_cancel {
+    padding: 16px;
+    color: #61a7f7;
+    border-radius: 5px;
+    display: block;
+    border: 2px solid #61a7f7;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.popup-close {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 16px;
+    position: fixed;
+    top: 21vh;
+    right: 21vw;
+    color: #fff;
+    font-weight: bold;
+    background-color: #132b46;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.popup-button_container {
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto 1rem auto;
+}
