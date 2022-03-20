@@ -39,7 +39,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: stretch;
-    margin: 2rem auto;
+    margin: 1rem auto 2rem auto;
 }
 
 .index-card {
@@ -48,22 +48,20 @@
     height: auto;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 5px 20px #00000015;
+    box-shadow: 0 5px 20px #61CAF750;
     border-radius: 4px;
-    border-top: 5px solid #4E586F;
     cursor: pointer;
 }
 
 .index-card:hover {
     transition: .3s ease-in;
     transform: scale(1.01);
-    box-shadow: 0 5px 15px #00000020;
-    border-top: 5px solid #61a7f7;
+    box-shadow: 0 5px 10px #61CAF750;
 }
 
 .index-card:hover .index-card_title {
     transition: .3s ease-in;
-    color: #61a7f7;
+    color: #61CAF7;
 }
 
 .index-card_svg {
@@ -77,7 +75,7 @@
     transition: .3s ease;
     font-size: 20px;
     font-weight: bold;
-    color: #4E586F;
+    color: #295162;
     text-align: center;
     line-height: 160%;
 }
@@ -114,7 +112,7 @@
     font-weight: bold;
     text-align: center;
     color: #fff;
-    background-color: #61a7f7;
+    background-color: #61CAF7;
     display: block;
     margin: 1rem auto;
     outline: none;
@@ -126,13 +124,13 @@
 
 .car-card_kilometers {
     background-color: #ffffff00;
-    color: #61a7f7;
+    color: #61CAF7;
 }
 
 .car-card {
     width: 25%;
     background: #FFFFFF;
-    box-shadow: 0px 0px 10px #61a7f780;
+    box-shadow: 0px 0px 10px #61CAF780;
     border-radius: 5px;
     height: auto;
     padding: 1rem;
@@ -142,11 +140,14 @@
     width: 95%;
     display: flex;
     justify-content: space-evenly;
-    margin:2rem auto;
+    margin: 2rem auto;
 }
 
 .car-table {
     width: 70%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #61CAF720;
+    background-color: #eaf8ff;
 }
 
 .car-table_header {
@@ -154,7 +155,7 @@
     font-weight: bold;
     color: #fff;
     background: #4E586F;
-    border-radius: 5px;
+    border-radius: 2px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
@@ -179,26 +180,33 @@
     font-size: 16px;
     font-weight: bold;
     color: #fff;
-    background-color: #61a7f7;
+    background-color: #61CAF7;
     margin: 10px auto;
     border-radius: 2px;
 
 }
 
 .day-close {
+    transition: .2s ease;
     position: absolute;
     top: 0;
     right: 0;
-height: 24px;
-width: 24px;
-background-color: #4E586F;
-color: #fff;
-font-weight: bold;
-font-size: 14px;
-display: flex;
-justify-content: center;
-align-items: center;
-cursor: pointer;
+    height: 24px;
+    width: 24px;
+    background-color: #4E586F;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.day-close:hover {
+    transition: .2s ease;
+    background-color: #132b46;
 }
 
 /*MODAL RESERVATION*/
@@ -221,7 +229,7 @@ cursor: pointer;
     height: 10vh;
     text-align: center;
     color: #fff;
-    background-color: #61a7f7;
+    background-color: #61CAF7;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -249,7 +257,7 @@ cursor: pointer;
 }
 
 .form-group_input, .form-group_select {
-    background-color: #61a7f720;
+    background-color: #61CAF720;
     padding: 10px;
     border-radius: 5px;
     outline: none;
@@ -259,9 +267,9 @@ cursor: pointer;
 .popup-button {
     padding: 16px;
     color: #fff;
-    background-color: #61a7f7;
+    background-color: #61CAF7;
     border-radius: 5px;
-    border: 2px solid #61a7f7;
+    border: 2px solid #61CAF7;
     display: block;
     border: none;
     outline: none;
@@ -272,10 +280,10 @@ cursor: pointer;
 
 .popup-button_cancel {
     padding: 16px;
-    color: #61a7f7;
+    color: #61CAF7;
     border-radius: 5px;
     display: block;
-    border: 2px solid #61a7f7;
+    border: 2px solid #61CAF7;
     outline: none;
     font-size: 16px;
     font-weight: bold;
@@ -305,4 +313,156 @@ cursor: pointer;
     justify-content: space-between;
     align-items: center;
     margin: 1rem auto 1rem auto;
+}
+
+
+/*APPLICATION*/
+
+.container-mobile {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start ;
+    margin: 2rem auto;
+}
+
+.mobile-card {
+    width: 360px;
+    margin-bottom: 2rem;
+    padding: 25px 40px 10px 40px;
+    border-top: 5px solid #61CAF7;
+    box-shadow: 0px 10px 10px 0px #61CAF733;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.mobile-card_image {
+    width: 56px;
+    height: 56px;
+}
+
+.mobile-card_title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #295162;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.mobile-card_text {
+    font-size: 15px;
+    color: #4E586F;
+    margin: 1rem 0 0 0;
+    line-height: 160%;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.mobile-card_footer {
+    width: 100%;
+    height: 48px;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
+
+.mobile-card_footerIcon {
+    width: 48px;
+    height: 48px;
+}
+/* GUIDE*/
+.container-guide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.guide-card {
+    width: 28%;
+    min-height: 500px;
+    padding-bottom: 1rem;
+    box-shadow: 0px 10px 10px 0px #61A7F733;
+    background-color: #fff;
+}
+
+#guide-card_middle {
+    width: 40%;
+}
+
+.guide-card_header {
+    width: 100%;
+    height: 230px;
+    background-image: url(assets/geo-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+    border-radius: 2px;
+}
+
+.guide-card_icon {
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin: 10px auto;
+}
+
+.guide-card_title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 80%;
+    margin: 40px auto;
+    letter-spacing: 2px;
+    line-height: 160%;
+}
+
+.label-row {
+font-weight: 700;
+font-size: 16px;
+line-height: 171.4%;
+color: #295162;
+padding: 1rem 5% .5rem 5%;
+}
+
+.content-row {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 171.4%;
+    color: #295162;
+    padding: 0 5% .5rem 5%;
+    }
+
+    .guide-card_button {
+        padding: 12px;
+        display: block;
+        margin: 1rem auto;
+        color: #fff;
+        font-weight: bold;
+        font-size: 15px;
+        border: none;
+        outline: none;
+        background-color: #61CAF7;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .important-text {
+        font-weight: bold;
+
+color: #295162;    }
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
 }

@@ -30,7 +30,7 @@
         </div>
 
         <!-- CARTE : APPLICATION MOBILE -->
-        <div class="index-card">
+        <div onclick="document.location.assign('application-mobile.php')" class="index-card">
             <img class="index-card_svg" src="assets/mobile-icon.svg" alt="Icone d'application mobile">
             <h2 class="index-card_title">Application mobile</h2>
         </div>

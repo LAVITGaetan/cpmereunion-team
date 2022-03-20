@@ -32,3 +32,5 @@ function hideCancelModal() {
     popUp.style.display ='none';
     document.location.reload();
 }
+
+
